@@ -1,18 +1,6 @@
-var selectSVG = function(width, height) { 
-  return d3.select("#d3_selectable_force_directed_graph").append("svg").attr("width", width - 20).attr("height", height - 20);
-}; 
-
 var appendSVG = function(svg) { 
-  return svg.append("svg:defs").selectAll("marker");
+  svg.append("svg:defs").selectAll("marker").data(["end"]).enter().append("svg:marker").attr("id", String).attr("viewBox", "0 -5 10 10").attr("refX", 20).attr("refY", -0.5).attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto").append("svg:path").attr("stroke-width", 1).attr("fill", 'seagreen').attr("d", "M0,-5L10,0L0,5");
 }; 
-
-var enterSVG = function(selectAll) { 
-  return selectAll.data(["end"]).enter().append("svg:marker");
-};
-
-var setAttributes = function(enter) { 
-   enter.attr("id", String).attr("viewBox", "0 -5 10 10").attr("refX", 20).attr("refY", -0.5).attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto").append("svg:path").attr("stroke-width", 1).attr("fill", 'seagreen').attr("d", "M0,-5L10,0L0,5");
-}
 
 var setRectangleAttributes = function(svg_graph, width, height) { 
   return svg_graph.append('svg:rect').attr('width', width).attr('height', height).attr("id", "graph-background");
@@ -24,7 +12,14 @@ var resize = function(width, svg, rect) {
   rect.attr("width", width - 20).attr("height", height - 20);
 }; 
 
+var onResize = function(window) { 
+  d3.select(window).on("resize", resize); 
+};
 
+var redraw = function() { 
+   vis.attr("transform",
+     "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
+}; 
 
 function selectableForceDirectedGraph() {
   var node_r = 10;
@@ -33,18 +28,14 @@ function selectableForceDirectedGraph() {
   var height = window.innerHeight;
   var xScale = d3.scale.linear().domain([0,width]).range([0,width]);
   var yScale = d3.scale.linear().domain([0,height]).range([0, height]);
-
-  var svg = selectSVG(width, height); 
-  var selectAll = appendSVG(svg);
-  var enter = enterSVG(selectAll);
+  var svg = d3.select("#d3_selectable_force_directed_graph").append("svg").attr("width", width - 20).attr("height", height - 20);
   var force = d3.layout.force().charge(-3000).gravity(0.65).linkDistance(20).size([width, height]);
   var zoomer = d3.behavior.zoom().scaleExtent([0.1,10]).x(xScale).y(yScale).on("zoom", redraw);
   var svg_graph = svg.append('svg:g').call(zoomer);
   var rect = setRectangleAttributes(svg_graph, width, height);
 
-  setAttributes(enter);
+  appendSVG(svg);
  
-
   
   function redraw() {
     vis.attr("transform",
@@ -53,7 +44,7 @@ function selectableForceDirectedGraph() {
 
   resize(width, svg, rect);
 
-  d3.select(window).on("resize", resize); 
+  onResize(window);
                                  
 
                                   var vis = svg_graph.append("svg:g");
