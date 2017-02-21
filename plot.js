@@ -1,6 +1,6 @@
 function selectableForceDirectedGraph() {
     var node_r = 10;
-    var maxOpacity = 0.5;
+    var maxOpacity = 1;
 
     var width = window.innerWidth;
     var height = window.innerHeight;
