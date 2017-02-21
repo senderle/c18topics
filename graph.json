@@ -1,0 +1,1734 @@
+{
+    "directed": true,
+    "graph": [],
+    "links": [
+        {
+            "source": 0,
+            "target": 72,
+            "weight": 0.06577096138127866
+        },
+        {
+            "source": 0,
+            "target": 70,
+            "weight": 0.06322057603163003
+        },
+        {
+            "source": 1,
+            "target": 89,
+            "weight": 0.061086744626122985
+        },
+        {
+            "source": 2,
+            "target": 110,
+            "weight": 0.055030019566402126
+        },
+        {
+            "source": 2,
+            "target": 54,
+            "weight": 0.054250424959300415
+        },
+        {
+            "source": 3,
+            "target": 70,
+            "weight": 0.1270001093958689
+        },
+        {
+            "source": 4,
+            "target": 138,
+            "weight": 0.06560471243880145
+        },
+        {
+            "source": 5,
+            "target": 24,
+            "weight": 0.06496122527695503
+        },
+        {
+            "source": 5,
+            "target": 52,
+            "weight": 0.055896416088313035
+        },
+        {
+            "source": 5,
+            "target": 119,
+            "weight": 0.0655462628934628
+        },
+        {
+            "source": 6,
+            "target": 89,
+            "weight": 0.05760303592362361
+        },
+        {
+            "source": 6,
+            "target": 148,
+            "weight": 0.09323601506758902
+        },
+        {
+            "source": 6,
+            "target": 36,
+            "weight": 0.07216253191700057
+        },
+        {
+            "source": 6,
+            "target": 55,
+            "weight": 0.08176221536555073
+        },
+        {
+            "source": 7,
+            "target": 48,
+            "weight": 0.06682245252547421
+        },
+        {
+            "source": 7,
+            "target": 96,
+            "weight": 0.11233106931117806
+        },
+        {
+            "source": 8,
+            "target": 34,
+            "weight": 0.053552084198565296
+        },
+        {
+            "source": 8,
+            "target": 59,
+            "weight": 0.06649096356795456
+        },
+        {
+            "source": 8,
+            "target": 139,
+            "weight": 0.23445057508923325
+        },
+        {
+            "source": 9,
+            "target": 41,
+            "weight": 0.06929026420551478
+        },
+        {
+            "source": 9,
+            "target": 140,
+            "weight": 0.07083934615794697
+        },
+        {
+            "source": 9,
+            "target": 94,
+            "weight": 0.06445524266339187
+        },
+        {
+            "source": 10,
+            "target": 91,
+            "weight": 0.11153816551663819
+        },
+        {
+            "source": 11,
+            "target": 72,
+            "weight": 0.06483314127622623
+        },
+        {
+            "source": 11,
+            "target": 98,
+            "weight": 0.061860097747805105
+        },
+        {
+            "source": 11,
+            "target": 103,
+            "weight": 0.0535645394033997
+        },
+        {
+            "source": 12,
+            "target": 134,
+            "weight": 0.05860966014401944
+        },
+        {
+            "source": 13,
+            "target": 72,
+            "weight": 0.06277841761962724
+        },
+        {
+            "source": 14,
+            "target": 72,
+            "weight": 0.05930640617940299
+        },
+        {
+            "source": 14,
+            "target": 98,
+            "weight": 0.058858327121034046
+        },
+        {
+            "source": 15,
+            "target": 136,
+            "weight": 0.06099176550544046
+        },
+        {
+            "source": 15,
+            "target": 147,
+            "weight": 0.07725944726199946
+        },
+        {
+            "source": 15,
+            "target": 140,
+            "weight": 0.05584227720180099
+        },
+        {
+            "source": 16,
+            "target": 140,
+            "weight": 0.056953948317986156
+        },
+        {
+            "source": 17,
+            "target": 16,
+            "weight": 0.05671096657705847
+        },
+        {
+            "source": 17,
+            "target": 11,
+            "weight": 0.08209019139305235
+        },
+        {
+            "source": 19,
+            "target": 72,
+            "weight": 0.05553352102188674
+        },
+        {
+            "source": 19,
+            "target": 103,
+            "weight": 0.06186972259473449
+        },
+        {
+            "source": 21,
+            "target": 72,
+            "weight": 0.07867236830918363
+        },
+        {
+            "source": 21,
+            "target": 98,
+            "weight": 0.060913403293858866
+        },
+        {
+            "source": 22,
+            "target": 97,
+            "weight": 0.06198192422723238
+        },
+        {
+            "source": 22,
+            "target": 132,
+            "weight": 0.05269833822085048
+        },
+        {
+            "source": 22,
+            "target": 136,
+            "weight": 0.054557748260677975
+        },
+        {
+            "source": 22,
+            "target": 77,
+            "weight": 0.07930868784974342
+        },
+        {
+            "source": 22,
+            "target": 79,
+            "weight": 0.06081856634429978
+        },
+        {
+            "source": 22,
+            "target": 93,
+            "weight": 0.05409338067527438
+        },
+        {
+            "source": 23,
+            "target": 145,
+            "weight": 0.06817209987127287
+        },
+        {
+            "source": 24,
+            "target": 72,
+            "weight": 0.06377403051735336
+        },
+        {
+            "source": 24,
+            "target": 97,
+            "weight": 0.05883122835541221
+        },
+        {
+            "source": 25,
+            "target": 136,
+            "weight": 0.08701327003742844
+        },
+        {
+            "source": 25,
+            "target": 140,
+            "weight": 0.05709637581330918
+        },
+        {
+            "source": 25,
+            "target": 94,
+            "weight": 0.05602552534241786
+        },
+        {
+            "source": 26,
+            "target": 31,
+            "weight": 0.08537861555011693
+        },
+        {
+            "source": 27,
+            "target": 49,
+            "weight": 0.14830786766000165
+        },
+        {
+            "source": 28,
+            "target": 147,
+            "weight": 0.07304834362969122
+        },
+        {
+            "source": 28,
+            "target": 140,
+            "weight": 0.06101140977052561
+        },
+        {
+            "source": 29,
+            "target": 148,
+            "weight": 0.05699841270291132
+        },
+        {
+            "source": 29,
+            "target": 84,
+            "weight": 0.053850964407548156
+        },
+        {
+            "source": 30,
+            "target": 138,
+            "weight": 0.05845893683591502
+        },
+        {
+            "source": 30,
+            "target": 71,
+            "weight": 0.053559246688314195
+        },
+        {
+            "source": 31,
+            "target": 26,
+            "weight": 0.06811885249517559
+        },
+        {
+            "source": 32,
+            "target": 147,
+            "weight": 0.07542814293317383
+        },
+        {
+            "source": 33,
+            "target": 72,
+            "weight": 0.0627609509674788
+        },
+        {
+            "source": 34,
+            "target": 8,
+            "weight": 0.055935491480137066
+        },
+        {
+            "source": 34,
+            "target": 139,
+            "weight": 0.0782651251401583
+        },
+        {
+            "source": 35,
+            "target": 136,
+            "weight": 0.07638366892533839
+        },
+        {
+            "source": 35,
+            "target": 79,
+            "weight": 0.05453276351474821
+        },
+        {
+            "source": 36,
+            "target": 89,
+            "weight": 0.07667227283898985
+        },
+        {
+            "source": 36,
+            "target": 148,
+            "weight": 0.08010825572140391
+        },
+        {
+            "source": 37,
+            "target": 89,
+            "weight": 0.14243467897969028
+        },
+        {
+            "source": 37,
+            "target": 148,
+            "weight": 0.08852444778970761
+        },
+        {
+            "source": 37,
+            "target": 126,
+            "weight": 0.0960940401469365
+        },
+        {
+            "source": 38,
+            "target": 72,
+            "weight": 0.06369582772895106
+        },
+        {
+            "source": 38,
+            "target": 41,
+            "weight": 0.07440570537212689
+        },
+        {
+            "source": 38,
+            "target": 110,
+            "weight": 0.052941123827109596
+        },
+        {
+            "source": 40,
+            "target": 98,
+            "weight": 0.052645753256381676
+        },
+        {
+            "source": 40,
+            "target": 83,
+            "weight": 0.12058397245322239
+        },
+        {
+            "source": 41,
+            "target": 9,
+            "weight": 0.05752865109134144
+        },
+        {
+            "source": 42,
+            "target": 66,
+            "weight": 0.07029086951417861
+        },
+        {
+            "source": 43,
+            "target": 110,
+            "weight": 0.06167054793544568
+        },
+        {
+            "source": 44,
+            "target": 56,
+            "weight": 0.06509744417771152
+        },
+        {
+            "source": 44,
+            "target": 91,
+            "weight": 0.053614134226642005
+        },
+        {
+            "source": 45,
+            "target": 72,
+            "weight": 0.07075344437394582
+        },
+        {
+            "source": 45,
+            "target": 41,
+            "weight": 0.0657034874073592
+        },
+        {
+            "source": 45,
+            "target": 70,
+            "weight": 0.05469413409501292
+        },
+        {
+            "source": 47,
+            "target": 98,
+            "weight": 0.06649073027113521
+        },
+        {
+            "source": 47,
+            "target": 70,
+            "weight": 0.17551873437607457
+        },
+        {
+            "source": 48,
+            "target": 70,
+            "weight": 0.06487888331075249
+        },
+        {
+            "source": 48,
+            "target": 7,
+            "weight": 0.05454819161332157
+        },
+        {
+            "source": 49,
+            "target": 27,
+            "weight": 0.20086344157386793
+        },
+        {
+            "source": 51,
+            "target": 100,
+            "weight": 0.052749906468330526
+        },
+        {
+            "source": 51,
+            "target": 110,
+            "weight": 0.0990168145218837
+        },
+        {
+            "source": 52,
+            "target": 110,
+            "weight": 0.05550238100996803
+        },
+        {
+            "source": 53,
+            "target": 72,
+            "weight": 0.10200587372520993
+        },
+        {
+            "source": 53,
+            "target": 97,
+            "weight": 0.05982055077742428
+        },
+        {
+            "source": 53,
+            "target": 103,
+            "weight": 0.06000267376011728
+        },
+        {
+            "source": 54,
+            "target": 110,
+            "weight": 0.06111793875586715
+        },
+        {
+            "source": 55,
+            "target": 148,
+            "weight": 0.11578196251370282
+        },
+        {
+            "source": 55,
+            "target": 36,
+            "weight": 0.05345429046709755
+        },
+        {
+            "source": 57,
+            "target": 98,
+            "weight": 0.05490660402340999
+        },
+        {
+            "source": 57,
+            "target": 70,
+            "weight": 0.17282207863276483
+        },
+        {
+            "source": 59,
+            "target": 8,
+            "weight": 0.10037568943845604
+        },
+        {
+            "source": 59,
+            "target": 9,
+            "weight": 0.0544226446524064
+        },
+        {
+            "source": 59,
+            "target": 34,
+            "weight": 0.06020292193414572
+        },
+        {
+            "source": 59,
+            "target": 139,
+            "weight": 0.17080675827564257
+        },
+        {
+            "source": 62,
+            "target": 149,
+            "weight": 0.05711567482818101
+        },
+        {
+            "source": 66,
+            "target": 78,
+            "weight": 0.10752190884597405
+        },
+        {
+            "source": 67,
+            "target": 89,
+            "weight": 0.18437940649128104
+        },
+        {
+            "source": 67,
+            "target": 148,
+            "weight": 0.08076350987987893
+        },
+        {
+            "source": 67,
+            "target": 126,
+            "weight": 0.09155792530856598
+        },
+        {
+            "source": 68,
+            "target": 72,
+            "weight": 0.06076246491729608
+        },
+        {
+            "source": 70,
+            "target": 80,
+            "weight": 0.06715584131494547
+        },
+        {
+            "source": 70,
+            "target": 73,
+            "weight": 0.05519496410846091
+        },
+        {
+            "source": 70,
+            "target": 47,
+            "weight": 0.06970831237799288
+        },
+        {
+            "source": 71,
+            "target": 136,
+            "weight": 0.05378421264130015
+        },
+        {
+            "source": 71,
+            "target": 58,
+            "weight": 0.05879788636279357
+        },
+        {
+            "source": 73,
+            "target": 126,
+            "weight": 0.0881964307673377
+        },
+        {
+            "source": 73,
+            "target": 70,
+            "weight": 0.10431317411818572
+        },
+        {
+            "source": 74,
+            "target": 97,
+            "weight": 0.05367620015159908
+        },
+        {
+            "source": 74,
+            "target": 140,
+            "weight": 0.05483085569522785
+        },
+        {
+            "source": 75,
+            "target": 72,
+            "weight": 0.055015769905579735
+        },
+        {
+            "source": 75,
+            "target": 77,
+            "weight": 0.07662178856142464
+        },
+        {
+            "source": 75,
+            "target": 22,
+            "weight": 0.07034096915600255
+        },
+        {
+            "source": 76,
+            "target": 89,
+            "weight": 0.17832713574578907
+        },
+        {
+            "source": 76,
+            "target": 126,
+            "weight": 0.13004869363510205
+        },
+        {
+            "source": 77,
+            "target": 89,
+            "weight": 0.0647169548430523
+        },
+        {
+            "source": 77,
+            "target": 22,
+            "weight": 0.06727497064263697
+        },
+        {
+            "source": 77,
+            "target": 79,
+            "weight": 0.06092262261939491
+        },
+        {
+            "source": 78,
+            "target": 66,
+            "weight": 0.057761704479785014
+        },
+        {
+            "source": 78,
+            "target": 149,
+            "weight": 0.08755339346985706
+        },
+        {
+            "source": 79,
+            "target": 97,
+            "weight": 0.08546472729462415
+        },
+        {
+            "source": 80,
+            "target": 70,
+            "weight": 0.16588064264822472
+        },
+        {
+            "source": 81,
+            "target": 136,
+            "weight": 0.061128813215312605
+        },
+        {
+            "source": 81,
+            "target": 97,
+            "weight": 0.06599533783342965
+        },
+        {
+            "source": 82,
+            "target": 41,
+            "weight": 0.05789092692429934
+        },
+        {
+            "source": 83,
+            "target": 40,
+            "weight": 0.21444037200453853
+        },
+        {
+            "source": 83,
+            "target": 13,
+            "weight": 0.06604488511827543
+        },
+        {
+            "source": 83,
+            "target": 126,
+            "weight": 0.07661238707715234
+        },
+        {
+            "source": 85,
+            "target": 72,
+            "weight": 0.05410269808523411
+        },
+        {
+            "source": 86,
+            "target": 72,
+            "weight": 0.09305193744839563
+        },
+        {
+            "source": 86,
+            "target": 68,
+            "weight": 0.05842765383545565
+        },
+        {
+            "source": 87,
+            "target": 136,
+            "weight": 0.061669672907095865
+        },
+        {
+            "source": 87,
+            "target": 147,
+            "weight": 0.07230514740333319
+        },
+        {
+            "source": 88,
+            "target": 113,
+            "weight": 0.1324662767237508
+        },
+        {
+            "source": 88,
+            "target": 114,
+            "weight": 0.07510479010053675
+        },
+        {
+            "source": 89,
+            "target": 148,
+            "weight": 0.06077038001477256
+        },
+        {
+            "source": 89,
+            "target": 126,
+            "weight": 0.19338283795216585
+        },
+        {
+            "source": 90,
+            "target": 73,
+            "weight": 0.07435538796316668
+        },
+        {
+            "source": 90,
+            "target": 70,
+            "weight": 0.19517864435451243
+        },
+        {
+            "source": 92,
+            "target": 72,
+            "weight": 0.06934722751406307
+        },
+        {
+            "source": 93,
+            "target": 97,
+            "weight": 0.10850485373344938
+        },
+        {
+            "source": 93,
+            "target": 77,
+            "weight": 0.05283221361012504
+        },
+        {
+            "source": 93,
+            "target": 22,
+            "weight": 0.06033242255988456
+        },
+        {
+            "source": 93,
+            "target": 79,
+            "weight": 0.08354026350383228
+        },
+        {
+            "source": 94,
+            "target": 136,
+            "weight": 0.06579312252642396
+        },
+        {
+            "source": 94,
+            "target": 9,
+            "weight": 0.05288126249605361
+        },
+        {
+            "source": 94,
+            "target": 140,
+            "weight": 0.09610428399835902
+        },
+        {
+            "source": 96,
+            "target": 110,
+            "weight": 0.07412993273254254
+        },
+        {
+            "source": 96,
+            "target": 119,
+            "weight": 0.06988057362286886
+        },
+        {
+            "source": 97,
+            "target": 79,
+            "weight": 0.054177581804110274
+        },
+        {
+            "source": 99,
+            "target": 72,
+            "weight": 0.09392643553156267
+        },
+        {
+            "source": 100,
+            "target": 72,
+            "weight": 0.058506743617732275
+        },
+        {
+            "source": 101,
+            "target": 72,
+            "weight": 0.10134600706100609
+        },
+        {
+            "source": 102,
+            "target": 136,
+            "weight": 0.08698743575383458
+        },
+        {
+            "source": 102,
+            "target": 131,
+            "weight": 0.05556902162048191
+        },
+        {
+            "source": 103,
+            "target": 72,
+            "weight": 0.06398752486175564
+        },
+        {
+            "source": 103,
+            "target": 140,
+            "weight": 0.0569005987131918
+        },
+        {
+            "source": 104,
+            "target": 136,
+            "weight": 0.06288487853850146
+        },
+        {
+            "source": 105,
+            "target": 72,
+            "weight": 0.05487305807216132
+        },
+        {
+            "source": 105,
+            "target": 103,
+            "weight": 0.07246077352764078
+        },
+        {
+            "source": 106,
+            "target": 56,
+            "weight": 0.06115896363156812
+        },
+        {
+            "source": 106,
+            "target": 61,
+            "weight": 0.06056444862591264
+        },
+        {
+            "source": 107,
+            "target": 89,
+            "weight": 0.09739751400448354
+        },
+        {
+            "source": 107,
+            "target": 148,
+            "weight": 0.05984870287112818
+        },
+        {
+            "source": 107,
+            "target": 126,
+            "weight": 0.06279047730159719
+        },
+        {
+            "source": 108,
+            "target": 72,
+            "weight": 0.06275645623025773
+        },
+        {
+            "source": 108,
+            "target": 136,
+            "weight": 0.06562679755720184
+        },
+        {
+            "source": 108,
+            "target": 13,
+            "weight": 0.10905552205870978
+        },
+        {
+            "source": 109,
+            "target": 149,
+            "weight": 0.10295050704097879
+        },
+        {
+            "source": 112,
+            "target": 40,
+            "weight": 0.05330299646586475
+        },
+        {
+            "source": 112,
+            "target": 91,
+            "weight": 0.0625015043860717
+        },
+        {
+            "source": 113,
+            "target": 88,
+            "weight": 0.059433441176190996
+        },
+        {
+            "source": 113,
+            "target": 41,
+            "weight": 0.05681601490087361
+        },
+        {
+            "source": 115,
+            "target": 89,
+            "weight": 0.0991149421098123
+        },
+        {
+            "source": 115,
+            "target": 138,
+            "weight": 0.06393776526658868
+        },
+        {
+            "source": 115,
+            "target": 126,
+            "weight": 0.08827657997679676
+        },
+        {
+            "source": 116,
+            "target": 110,
+            "weight": 0.059598777988724545
+        },
+        {
+            "source": 117,
+            "target": 103,
+            "weight": 0.05545417023819986
+        },
+        {
+            "source": 120,
+            "target": 72,
+            "weight": 0.06751803096715996
+        },
+        {
+            "source": 120,
+            "target": 39,
+            "weight": 0.06270856989798908
+        },
+        {
+            "source": 123,
+            "target": 41,
+            "weight": 0.06068753140133098
+        },
+        {
+            "source": 123,
+            "target": 147,
+            "weight": 0.08054456861367691
+        },
+        {
+            "source": 123,
+            "target": 140,
+            "weight": 0.0678192412948691
+        },
+        {
+            "source": 124,
+            "target": 138,
+            "weight": 0.22331396370398998
+        },
+        {
+            "source": 125,
+            "target": 89,
+            "weight": 0.12702448522751328
+        },
+        {
+            "source": 125,
+            "target": 148,
+            "weight": 0.07051349829923209
+        },
+        {
+            "source": 125,
+            "target": 126,
+            "weight": 0.07267405312627859
+        },
+        {
+            "source": 126,
+            "target": 89,
+            "weight": 0.28318586581931043
+        },
+        {
+            "source": 127,
+            "target": 16,
+            "weight": 0.07258221935407123
+        },
+        {
+            "source": 128,
+            "target": 89,
+            "weight": 0.0799848862120478
+        },
+        {
+            "source": 128,
+            "target": 148,
+            "weight": 0.0551637865088777
+        },
+        {
+            "source": 130,
+            "target": 70,
+            "weight": 0.05298190385806509
+        },
+        {
+            "source": 132,
+            "target": 77,
+            "weight": 0.0726774089496989
+        },
+        {
+            "source": 132,
+            "target": 22,
+            "weight": 0.09547039262813797
+        },
+        {
+            "source": 132,
+            "target": 93,
+            "weight": 0.05950508270957236
+        },
+        {
+            "source": 133,
+            "target": 148,
+            "weight": 0.17949912506381915
+        },
+        {
+            "source": 134,
+            "target": 68,
+            "weight": 0.05441653643280113
+        },
+        {
+            "source": 135,
+            "target": 27,
+            "weight": 0.07721377654875364
+        },
+        {
+            "source": 135,
+            "target": 70,
+            "weight": 0.06054470544561283
+        },
+        {
+            "source": 137,
+            "target": 72,
+            "weight": 0.058996741187654585
+        },
+        {
+            "source": 137,
+            "target": 103,
+            "weight": 0.07258996170412663
+        },
+        {
+            "source": 139,
+            "target": 8,
+            "weight": 0.14681556275548777
+        },
+        {
+            "source": 139,
+            "target": 59,
+            "weight": 0.070853274732617
+        },
+        {
+            "source": 140,
+            "target": 147,
+            "weight": 0.05728225983696411
+        },
+        {
+            "source": 141,
+            "target": 136,
+            "weight": 0.057220063116476684
+        },
+        {
+            "source": 141,
+            "target": 35,
+            "weight": 0.07171994504049668
+        },
+        {
+            "source": 142,
+            "target": 15,
+            "weight": 0.06839706431015898
+        },
+        {
+            "source": 145,
+            "target": 138,
+            "weight": 0.0597841979327269
+        },
+        {
+            "source": 145,
+            "target": 23,
+            "weight": 0.1315365166176711
+        },
+        {
+            "source": 146,
+            "target": 136,
+            "weight": 0.08993255140288556
+        },
+        {
+            "source": 146,
+            "target": 22,
+            "weight": 0.06455484470429516
+        },
+        {
+            "source": 147,
+            "target": 136,
+            "weight": 0.06005875222692328
+        },
+        {
+            "source": 147,
+            "target": 140,
+            "weight": 0.08470627114131736
+        },
+        {
+            "source": 148,
+            "target": 89,
+            "weight": 0.09083782750958631
+        },
+        {
+            "source": 149,
+            "target": 78,
+            "weight": 0.07629195307734285
+        }
+    ],
+    "multigraph": false,
+    "nodes": [
+        {
+            "id": 0,
+            "name": "Jonathan Swift 1"
+        },
+        {
+            "id": 1,
+            "name": "Italy"
+        },
+        {
+            "id": 2,
+            "name": "Global Geography"
+        },
+        {
+            "id": 3,
+            "name": "Jonathan Swift 2"
+        },
+        {
+            "id": 4,
+            "name": "British Geography"
+        },
+        {
+            "id": 5,
+            "name": "Church Hierarchy"
+        },
+        {
+            "id": 6,
+            "name": "Roguish Comedy"
+        },
+        {
+            "id": 7,
+            "name": "British Genealogies"
+        },
+        {
+            "id": 8,
+            "name": "Statutes 1"
+        },
+        {
+            "id": 9,
+            "name": "Public Revenue"
+        },
+        {
+            "id": 10,
+            "name": "[Scotland | High Abstraction]"
+        },
+        {
+            "id": 11,
+            "name": "Greek and Roman History"
+        },
+        {
+            "id": 12,
+            "name": "Botanical Travels"
+        },
+        {
+            "id": 13,
+            "name": "Domestic Narratives"
+        },
+        {
+            "id": 14,
+            "name": "Biblical History 1"
+        },
+        {
+            "id": 15,
+            "name": "Law and Legal History"
+        },
+        {
+            "id": 16,
+            "name": "Honor and Reputation"
+        },
+        {
+            "id": 17,
+            "name": "Greek Travels"
+        },
+        {
+            "id": 18,
+            "name": "Dictionaries and Glossaries (?)"
+        },
+        {
+            "id": 19,
+            "name": "Naval History"
+        },
+        {
+            "id": 20,
+            "name": "Cooking"
+        },
+        {
+            "id": 21,
+            "name": "Roman Lives"
+        },
+        {
+            "id": 22,
+            "name": "Devotional Literature"
+        },
+        {
+            "id": 23,
+            "name": "Latin Words 1"
+        },
+        {
+            "id": 24,
+            "name": "Dissenters' History"
+        },
+        {
+            "id": 25,
+            "name": "Criminal Law"
+        },
+        {
+            "id": 26,
+            "name": "Anatomy"
+        },
+        {
+            "id": 27,
+            "name": "Statutes 2"
+        },
+        {
+            "id": 28,
+            "name": "British Political History"
+        },
+        {
+            "id": 29,
+            "name": "Elizabethan Language"
+        },
+        {
+            "id": 30,
+            "name": "Latin Language and Grammar"
+        },
+        {
+            "id": 31,
+            "name": "Medicine"
+        },
+        {
+            "id": 32,
+            "name": "Political Philosophy"
+        },
+        {
+            "id": 33,
+            "name": "Central European Travels"
+        },
+        {
+            "id": 34,
+            "name": "Local Court Proceedings"
+        },
+        {
+            "id": 35,
+            "name": "Metaphysics"
+        },
+        {
+            "id": 36,
+            "name": "Rabelaisian Satire"
+        },
+        {
+            "id": 37,
+            "name": "Poetic Diction 1"
+        },
+        {
+            "id": 38,
+            "name": "Spanish Affairs and Travels"
+        },
+        {
+            "id": 39,
+            "name": "Parliamentary History"
+        },
+        {
+            "id": 40,
+            "name": "[Random History | Unclear]"
+        },
+        {
+            "id": 41,
+            "name": "Trade and Wealth"
+        },
+        {
+            "id": 42,
+            "name": "[Annuities | Theatre]"
+        },
+        {
+            "id": 43,
+            "name": "Antiquarian Documents"
+        },
+        {
+            "id": 44,
+            "name": "Early British Literature"
+        },
+        {
+            "id": 45,
+            "name": "European Settlement in the Americas"
+        },
+        {
+            "id": 46,
+            "name": "Scotland and the Union"
+        },
+        {
+            "id": 47,
+            "name": "British History"
+        },
+        {
+            "id": 48,
+            "name": "Church Lands"
+        },
+        {
+            "id": 49,
+            "name": "Statutes 3"
+        },
+        {
+            "id": 50,
+            "name": "Anthropology"
+        },
+        {
+            "id": 51,
+            "name": "Italian and West European Travels"
+        },
+        {
+            "id": 52,
+            "name": "British Places"
+        },
+        {
+            "id": 53,
+            "name": "Memoirs (Mostly of Sully)"
+        },
+        {
+            "id": 54,
+            "name": "Political Geography"
+        },
+        {
+            "id": 55,
+            "name": "Courtship"
+        },
+        {
+            "id": 56,
+            "name": "OCR Errors 1"
+        },
+        {
+            "id": 57,
+            "name": "Imperial Trade"
+        },
+        {
+            "id": 58,
+            "name": "Art, Taste, and Genius"
+        },
+        {
+            "id": 59,
+            "name": "Duties and Taxes"
+        },
+        {
+            "id": 60,
+            "name": "French Words"
+        },
+        {
+            "id": 61,
+            "name": "Ireland"
+        },
+        {
+            "id": 62,
+            "name": "Chemistry"
+        },
+        {
+            "id": 63,
+            "name": "Colonial Administration"
+        },
+        {
+            "id": 64,
+            "name": "Legal Judgment and Enforcement"
+        },
+        {
+            "id": 65,
+            "name": "OCR Errors 2"
+        },
+        {
+            "id": 66,
+            "name": "Mathematics"
+        },
+        {
+            "id": 67,
+            "name": "Masculine Virtue"
+        },
+        {
+            "id": 68,
+            "name": "Biology and Natural History"
+        },
+        {
+            "id": 69,
+            "name": "Early Scottish Balladry"
+        },
+        {
+            "id": 70,
+            "name": "Biographical Diction 2 (?)"
+        },
+        {
+            "id": 71,
+            "name": "History of Languages"
+        },
+        {
+            "id": 72,
+            "name": "Biographical Diction 1 (?)"
+        },
+        {
+            "id": 73,
+            "name": "Literary Diction (?)"
+        },
+        {
+            "id": 74,
+            "name": "Character and Conduct"
+        },
+        {
+            "id": 75,
+            "name": "Biblical History 2"
+        },
+        {
+            "id": 76,
+            "name": "Poetry, Classical and Modern"
+        },
+        {
+            "id": 77,
+            "name": "Divine Judgment"
+        },
+        {
+            "id": 78,
+            "name": "Geometry"
+        },
+        {
+            "id": 79,
+            "name": "Virtue and Happiness"
+        },
+        {
+            "id": 80,
+            "name": "Travel Adventures"
+        },
+        {
+            "id": 81,
+            "name": "Sectarian Disputes"
+        },
+        {
+            "id": 82,
+            "name": "Population Statistics (Mostly Scotland)"
+        },
+        {
+            "id": 83,
+            "name": "[Poetic Language | Unclear]"
+        },
+        {
+            "id": 84,
+            "name": "Early English Poetry"
+        },
+        {
+            "id": 85,
+            "name": "[Long S | Unclear]"
+        },
+        {
+            "id": 86,
+            "name": "Remote Travels"
+        },
+        {
+            "id": 87,
+            "name": "[Treason | Disputed Elections]"
+        },
+        {
+            "id": 88,
+            "name": "Agriculture"
+        },
+        {
+            "id": 89,
+            "name": "Elegy"
+        },
+        {
+            "id": 90,
+            "name": "Biblical Exegesis"
+        },
+        {
+            "id": 91,
+            "name": "OCR Errors 3"
+        },
+        {
+            "id": 92,
+            "name": "Monarchical History"
+        },
+        {
+            "id": 93,
+            "name": "Sermons 1"
+        },
+        {
+            "id": 94,
+            "name": "East India Company"
+        },
+        {
+            "id": 95,
+            "name": "[OCR Errors | Unclear]"
+        },
+        {
+            "id": 96,
+            "name": "Birth and Death Records"
+        },
+        {
+            "id": 97,
+            "name": "Prudence and Virtue"
+        },
+        {
+            "id": 98,
+            "name": "Military History"
+        },
+        {
+            "id": 99,
+            "name": "Naval Voyages"
+        },
+        {
+            "id": 100,
+            "name": "Manners"
+        },
+        {
+            "id": 101,
+            "name": "Middle East Travels"
+        },
+        {
+            "id": 102,
+            "name": "Scriptural Commentary"
+        },
+        {
+            "id": 103,
+            "name": "History"
+        },
+        {
+            "id": 104,
+            "name": "Civil Law"
+        },
+        {
+            "id": 105,
+            "name": "Aristocracy"
+        },
+        {
+            "id": 106,
+            "name": "OCR Errors 4"
+        },
+        {
+            "id": 107,
+            "name": "Authors Works and Lives"
+        },
+        {
+            "id": 108,
+            "name": "[Mothers and Children | Political Theory]"
+        },
+        {
+            "id": 109,
+            "name": "Herbal Medicine"
+        },
+        {
+            "id": 110,
+            "name": "Descriptions of Cities"
+        },
+        {
+            "id": 111,
+            "name": "Letters"
+        },
+        {
+            "id": 112,
+            "name": "[Elphinstone's Orthography]"
+        },
+        {
+            "id": 113,
+            "name": "Rural Economy"
+        },
+        {
+            "id": 114,
+            "name": "Gardening and Botany"
+        },
+        {
+            "id": 115,
+            "name": "Virgil, Catullus, and Imitators"
+        },
+        {
+            "id": 116,
+            "name": "Descriptions of Landscape"
+        },
+        {
+            "id": 117,
+            "name": "History of England and Scotland"
+        },
+        {
+            "id": 118,
+            "name": "Swedenborg 1"
+        },
+        {
+            "id": 119,
+            "name": "[OCR Errors | British Nobility | Heraldry | Sermons]"
+        },
+        {
+            "id": 120,
+            "name": "[Travel and Affairs of State | Unclear]"
+        },
+        {
+            "id": 121,
+            "name": "[OCR Errors | Unclear]"
+        },
+        {
+            "id": 122,
+            "name": "North American Colonies"
+        },
+        {
+            "id": 123,
+            "name": "France"
+        },
+        {
+            "id": 124,
+            "name": "Latin Words 2"
+        },
+        {
+            "id": 125,
+            "name": "Sentimental Satire"
+        },
+        {
+            "id": 126,
+            "name": "Poetic Diction 2"
+        },
+        {
+            "id": 127,
+            "name": "[Roman History | Sectarian Disputes]"
+        },
+        {
+            "id": 128,
+            "name": "[Modern S | Unclear]"
+        },
+        {
+            "id": 129,
+            "name": "Ancient Geography"
+        },
+        {
+            "id": 130,
+            "name": "Swedenborg 2"
+        },
+        {
+            "id": 131,
+            "name": "British Literary History (?)"
+        },
+        {
+            "id": 132,
+            "name": "Conversion Narratives (?)"
+        },
+        {
+            "id": 133,
+            "name": "Drama (Mostly Shakespeare)"
+        },
+        {
+            "id": 134,
+            "name": "Botany and Entomology"
+        },
+        {
+            "id": 135,
+            "name": "Manufacturing"
+        },
+        {
+            "id": 136,
+            "name": "Rhetoric and Reason"
+        },
+        {
+            "id": 137,
+            "name": "Sweden and Northern Europe"
+        },
+        {
+            "id": 138,
+            "name": "Latin Words 3"
+        },
+        {
+            "id": 139,
+            "name": "Statutes 4"
+        },
+        {
+            "id": 140,
+            "name": "International Affairs"
+        },
+        {
+            "id": 141,
+            "name": "Philosophy (Plato and Imitators)"
+        },
+        {
+            "id": 142,
+            "name": "Estate and Property Law"
+        },
+        {
+            "id": 143,
+            "name": "Early English History"
+        },
+        {
+            "id": 144,
+            "name": "European Powers and War"
+        },
+        {
+            "id": 145,
+            "name": "[OCR Errors | Exchequer | Unclear]"
+        },
+        {
+            "id": 146,
+            "name": "Sermons 2"
+        },
+        {
+            "id": 147,
+            "name": "Democracy"
+        },
+        {
+            "id": 148,
+            "name": "Dramatic Diction (?)"
+        },
+        {
+            "id": 149,
+            "name": "Engineering and Construction"
+        }
+    ]
+}
