@@ -18,11 +18,12 @@ var setRectangleAttributes = function(svg_graph, width, height) {
   return svg_graph.append('svg:rect').attr('width', width).attr('height', height).attr("id", "graph-background");
 }; 
 
-var resize = function() {
+var resize = function(width, svg, rect) {
   var width = window.innerWidth, height = window.innerHeight;
   svg.attr("width", width - 20).attr("height", height - 20);
   rect.attr("width", width - 20).attr("height", height - 20);
-}
+}; 
+
 
 
 function selectableForceDirectedGraph() {
@@ -41,8 +42,6 @@ function selectableForceDirectedGraph() {
   var svg_graph = svg.append('svg:g').call(zoomer);
   var rect = setRectangleAttributes(svg_graph, width, height);
 
-
-  
   setAttributes(enter);
  
 
@@ -52,6 +51,7 @@ function selectableForceDirectedGraph() {
      "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
   }
 
+  resize(width, svg, rect);
 
   d3.select(window).on("resize", resize); 
                                  
