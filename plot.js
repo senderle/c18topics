@@ -129,9 +129,7 @@ var setJson = function(force, maxOpacity, vis, node_r) {
     force.on("tick", tick);
 
   });
-
 }; 
-
 
 var selectableForceDirectedGraph = function() {
   var node_r = 10;
