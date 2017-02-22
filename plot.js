@@ -3,7 +3,7 @@
 // there is a transparent circle and it is to ensure that the order of drawing is correct. 
 
 
-var setSVG = function(width, height) { 
+var appendSVGAndSetAttributes = function(width, height) { 
   return d3.select("#d3_selectable_force_directed_graph").append("svg").attr("width", width - 20).attr("height", height - 20);
 };
 
@@ -14,8 +14,6 @@ var appendSVG = function(svg) {
 var setRectangleAttributes = function(svg_graph, width, height) { 
   return svg_graph.append('svg:rect').attr('width', width).attr('height', height).attr("id", "graph-background");
 }; 
-
-
 
 var appendTopicLabel = function(node, opacity, node_r) {
   var label = node.append("text").attr("class", "topic-click-label").attr("font-size", node_r).attr("x", node_r + 2).attr("dy", ".35em").attr("opacity", opacity).text(function(d) { return d.name });
@@ -94,6 +92,17 @@ var setNode = function(vis, graph) {
   return vis.selectAll(".node").data(graph.nodes).enter().append("g").attr("class", "node");
 }; 
 
+var tick = function(link, linkPath, undernode, transform) {
+  link.attr("d", linkPath);
+  undernode.attr("transform", transform);
+  node.attr("transform", transform);
+  for (var i = 0; i < 200 && force.alpha() > 0.009; i++) {
+    force.tick();
+  }
+
+  force.on("tick", tick);
+}; 
+
 var setJson = function(force, maxOpacity, vis, node_r) { 
   d3.json("graph.json", function(error, graph) {
     setGraphNodes(graph);
@@ -114,16 +123,8 @@ var setJson = function(force, maxOpacity, vis, node_r) {
     checkIfGraphIsDirected(graph, linkArc, linkLine)
 
     //this forces the appearance of the graph in the correct position
-    function tick() {
-      link.attr("d", linkPath);
-      undernode.attr("transform", transform);
-      node.attr("transform", transform);
-      for (var i = 0; i < 200 && force.alpha() > 0.009; i++) {
-        force.tick();
-      }
-    }
-
-    force.on("tick", tick);
+    tick(link, linkPath, undernode, transform);
+    
 
   });
 
@@ -137,7 +138,7 @@ var selectableForceDirectedGraph = function() {
   var height = window.innerHeight;
   var xScale = d3.scale.linear().domain([0,width]).range([0,width]);
   var yScale = d3.scale.linear().domain([0,height]).range([0, height]);
-  var svg = setSVG(width, height);
+  var svg = appendSVGAndSetAttributes(width, height);
   var force = d3.layout.force().charge(-3000).gravity(0.65).linkDistance(20).size([width, height]);
   var zoomer = d3.behavior.zoom().scaleExtent([0.1,10]).x(xScale).y(yScale).on("zoom", redraw);
   var svg_graph = svg.append('svg:g').call(zoomer);
