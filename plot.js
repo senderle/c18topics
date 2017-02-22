@@ -1,27 +1,59 @@
 var setSVG = function(width, height) { 
-  return d3.select("#d3_selectable_force_directed_graph").append("svg").attr("width", width - 20).attr("height", height - 20);
+  return d3.select("#d3_selectable_force_directed_graph")
+           .append("svg")
+           .attr("width", width - 20)
+           .attr("height", height - 20);
 };
 
 var appendSVG = function(svg) { 
-  return svg.append("svg:defs").selectAll("marker").data(["end"]).enter().append("svg:marker").attr("id", String).attr("viewBox", "0 -5 10 10").attr("refX", 20).attr("refY", -0.5).attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto").append("svg:path").attr("stroke-width", 1).attr("fill", 'seagreen').attr("d", "M0,-5L10,0L0,5");
+  return svg.append("svg:defs")
+            .selectAll("marker")
+            .data(["end"])
+            .enter()
+            .append("svg:marker")
+            .attr("id", String)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 20)
+            .attr("refY", -0.5)
+            .attr("markerWidth", 5)
+            .attr("markerHeight", 5)
+            .attr("orient", "auto")
+            .append("svg:path")
+            .attr("stroke-width", 1)
+            .attr("fill", 'seagreen')
+            .attr("d", "M0,-5L10,0L0,5");
 }; 
 
 var setRectangleAttributes = function(svg_graph, width, height) { 
-  return svg_graph.append('svg:rect').attr('width', width).attr('height', height).attr("id", "graph-background");
+  return svg_graph.append('svg:rect')
+                  .attr('width', width)
+                  .attr('height', height)
+                  .attr("id", "graph-background");
 }; 
 
 var resize = function(width, svg, rect) {
   var width = window.innerWidth, height = window.innerHeight;
-  svg.attr("width", width - 20).attr("height", height - 20);
-  rect.attr("width", width - 20).attr("height", height - 20);
+  svg.attr("width", width - 20)
+     .attr("height", height - 20);
+  rect.attr("width", width - 20)
+      .attr("height", height - 20);
 }; 
 
 var onResize = function(window) { 
-  d3.select(window).on("resize", resize); 
+  d3.select(window)
+    .on("resize", resize); 
 };
 
 var appendTopicLabel = function(node, opacity, node_r) {
-  var label = node.append("text").attr("class", "topic-click-label").attr("font-size", node_r).attr("x", node_r + 2).attr("dy", ".35em").attr("opacity", opacity).text(function(d) { return d.name });
+  var label = node.append("text")
+                  .attr("class", "topic-click-label")
+                  .attr("font-size", node_r)
+                  .attr("x", node_r + 2)
+                  .attr("dy", ".35em")
+                  .attr("opacity", opacity)
+                  .text(function(d) { 
+                    return d.name 
+                  });
   return label
 };
 
@@ -30,9 +62,12 @@ var circleClick = function(node_r) {
   var thislabel = thisnode.select(".topic-click-label");
   if (thislabel.empty()) {
     thislabel = appendTopicLabel(thisnode, 0, node_r);
-    thislabel.transition(500).attr("opacity", 1);
+    thislabel.transition(500)
+             .attr("opacity", 1);
   } else {
-    thislabel.transition(500).attr("opacity", 0).remove();
+    thislabel.transition(500)
+             .attr("opacity", 0)
+             .remove();
   }
 }; 
 
@@ -52,7 +87,11 @@ var transform = function(d) {
 }; 
 
 var setUndernode = function(vis, graph) { 
-  return vis.selectAll(".undernode").data(graph.nodes).enter().append("g").attr("class", "undernode"); 
+  return vis.selectAll(".undernode")
+            .data(graph.nodes)
+            .enter()
+            .append("g")
+            .attr("class", "undernode"); 
 };  
 
 var checkIfGraphIsDirected = function(graph, linkArc, linkLine) { 
@@ -64,7 +103,15 @@ var checkIfGraphIsDirected = function(graph, linkArc, linkLine) {
 };
 
 var setLink = function(vis, graph, node_r) { 
-  return vis.selectAll(".link").data(graph.links).enter().append("path").attr("class", "link").attr("opacity", function(d) { return d.weight / maxWeight; }).attr("stroke-width", node_r / 6);
+  return vis.selectAll(".link")
+            .data(graph.links)
+            .enter()
+            .append("path")
+            .attr("class", "link")
+            .attr("opacity", function(d) { 
+              return d.weight / maxWeight; 
+            })
+            .attr("stroke-width", node_r / 6);
 }; 
 
 var forceNodes = function(force, graph) { 
@@ -83,18 +130,32 @@ var setMaxWeight = function(graph, maxOpacity) {
 }; 
 
 setIdLabel = function(node_r, undernode) { 
-  undernode.append("text").attr("class", "id-label").attr("font-size", node_r).attr("text-anchor", "middle").attr("dy", ".35em").text(function(d) { return d.id });
+  undernode.append("text")
+           .attr("class", "id-label")
+           .attr("font-size", node_r)
+           .attr("text-anchor", "middle")
+           .attr("dy", ".35em")
+           .text(function(d) { 
+              return d.id 
+            });
 };
 
 var drawGraph = function(node, undernode, node_r) { 
   undernode.append("circle").attr("r", node_r); 
   idLabel = setIdLabel(node_r, undernode); 
-  node.append("circle").attr("r", node_r).attr("opacity", 0).on("click", circleClick);
+  node.append("circle")
+      .attr("r", node_r)
+      .attr("opacity", 0)
+      .on("click", circleClick);
   appendTopicLabel(node, 1, node_r);
 }; 
 
 var setNode = function(vis, graph) { 
-  return vis.selectAll(".node").data(graph.nodes).enter().append("g").attr("class", "node");
+  return vis.selectAll(".node")
+            .data(graph.nodes)
+            .enter()
+            .append("g")
+            .attr("class", "node");
 }; 
 
 var setJson = function(force, maxOpacity, vis, node_r) { 
