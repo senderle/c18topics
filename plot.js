@@ -1,3 +1,8 @@
+//the nodes, it is hard to control the order in which it draws things. Because of that, sometimes edges get drawn on top of nodes, or node labels
+// numbers inside the circle sometimes get drawn underneath circles. 
+// there is a transparent circle and it is to ensure that the order of drawing is correct. 
+
+
 var setSVG = function(width, height) { 
   return d3.select("#d3_selectable_force_directed_graph").append("svg").attr("width", width - 20).attr("height", height - 20);
 };
@@ -10,15 +15,7 @@ var setRectangleAttributes = function(svg_graph, width, height) {
   return svg_graph.append('svg:rect').attr('width', width).attr('height', height).attr("id", "graph-background");
 }; 
 
-var resize = function(width, svg, rect) {
-  var width = window.innerWidth, height = window.innerHeight;
-  svg.attr("width", width - 20).attr("height", height - 20);
-  rect.attr("width", width - 20).attr("height", height - 20);
-}; 
 
-var onResize = function(window) { 
-  d3.select(window).on("resize", resize); 
-};
 
 var appendTopicLabel = function(node, opacity, node_r) {
   var label = node.append("text").attr("class", "topic-click-label").attr("font-size", node_r).attr("x", node_r + 2).attr("dy", ".35em").attr("opacity", opacity).text(function(d) { return d.name });
@@ -82,7 +79,7 @@ var setMaxWeight = function(graph, maxOpacity) {
   return Math.max.apply(null, graph.links.map(function(d) { return d.weight; })) / maxOpacity;
 }; 
 
-setIdLabel = function(node_r, undernode) { 
+var setIdLabel = function(node_r, undernode) { 
   undernode.append("text").attr("class", "id-label").attr("font-size", node_r).attr("text-anchor", "middle").attr("dy", ".35em").text(function(d) { return d.id });
 };
 
@@ -144,7 +141,6 @@ var selectableForceDirectedGraph = function() {
   var force = d3.layout.force().charge(-3000).gravity(0.65).linkDistance(20).size([width, height]);
   var zoomer = d3.behavior.zoom().scaleExtent([0.1,10]).x(xScale).y(yScale).on("zoom", redraw);
   var svg_graph = svg.append('svg:g').call(zoomer);
-  var rect = setRectangleAttributes(svg_graph, width, height);
   var vis = svg_graph.append("svg:g");
 
   appendSVG(svg);
@@ -153,8 +149,7 @@ var selectableForceDirectedGraph = function() {
     vis.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
   }; 
 
-  resize(width, svg, rect);
-  onResize(window);                                
+                              
   setJson(force, maxOpacity, vis, node_r);
 
 }; 
