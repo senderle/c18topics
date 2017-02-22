@@ -1,0 +1,38 @@
+text {
+    font-family: sans-serif;
+    stroke-width: 0.15;
+    font-size: 2;
+    pointer-events: none;
+}
+
+.link {
+    stroke: seagreen;
+    fill: none;
+}
+
+#graph-background {
+    stroke: transparent;
+    fill: ghostwhite;
+}
+
+.id-label {
+    stroke: seagreen;
+    fill: ghostwhite;
+    stroke-width: 0.15;
+}
+
+.topic-click-label {
+    stroke: lightsteelblue;
+    stroke-width: 0.15;
+    fill: black;
+}
+
+circle {
+    stroke-width: 0.15;
+    stroke: seagreen;
+    fill: lightsteelblue;
+}
+
+.graph { 
+    text-align: center;
+}
