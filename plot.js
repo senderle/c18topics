@@ -177,14 +177,14 @@ var setJson = function(force, maxOpacity, vis, node_r) {
     appendTopicLabel(node, 1, node_r);
     checkIfGraphIsDirected(graph, linkArc, linkLine)
 
-    //this forces the appearance of the graph in the correct position
     function tick() {
       link.attr("d", linkPath);
       undernode.attr("transform", transform);
       node.attr("transform", transform);
-      for (var i = 0; i < 200 && force.alpha() > 0.009; i++) {
-        force.tick();
-      }
+    }
+
+    for (var i = 0; i < 200 && force.alpha() > 0.009; i++) {
+      force.tick();
     }
 
     force.on("tick", tick);
