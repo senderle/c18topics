@@ -31,19 +31,6 @@ var setRectangleAttributes = function(svg_graph, width, height) {
                   .attr("id", "graph-background");
 }; 
 
-var resize = function(width, svg, rect) {
-  var width = window.innerWidth, height = window.innerHeight;
-  svg.attr("width", width - 20)
-     .attr("height", height - 20);
-  rect.attr("width", width - 20)
-      .attr("height", height - 20);
-}; 
-
-var onResize = function(window) { 
-  d3.select(window)
-    .on("resize", resize); 
-};
-
 var appendTopicLabel = function(node, opacity, node_r) {
   var label = node.append("text")
                   .attr("class", "topic-click-label")
@@ -212,8 +199,15 @@ var selectableForceDirectedGraph = function() {
     vis.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
   }; 
 
-  resize(width, svg, rect);
-  onResize(window);                                
+  function resize() {
+    var width = window.innerWidth, height = window.innerHeight;
+    svg.attr("width", width - 20).attr("height", height - 20);
+    rect.attr("width", width - 20).attr("height", height - 20);
+  }; 
+  
+  d3.select(window).on("resize", resize); 
+
+ 
   setJson(force, maxOpacity, vis, node_r);
 
 }; 
