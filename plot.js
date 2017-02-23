@@ -44,26 +44,25 @@ var onResize = function(window) {
     .on("resize", resize); 
 };
 
-var appendTopicLabel = function(node, opacity, node_r) {
-  var label = node.append("text")
-                  .attr("class", "topic-click-label")
-                  .attr("font-size", node_r)
-                  .attr("x", node_r + 2)
-                  .attr("dy", ".35em")
-                  .attr("opacity", opacity)
-                  .text(function(d) { 
-                    return d.name 
-                  });
-  return label
-};
+function appendTopicLabel(node, opacity) {
+    label = node.append("text")
+                .attr("class", "topic-click-label")
+                .attr("font-size", 10 + 'px')
+                .attr("x", 10 + 'px')
+                .attr("dy", ".35em")
+                .attr("opacity", opacity)
+                .text(function(d) { return d.name });
+    return label
+}
 
-var circleClick = function(node_r) {
+var circleClick = function(node, node_r) {
   var thisnode = d3.select(this.parentNode);
   var thislabel = thisnode.select(".topic-click-label");
   if (thislabel.empty()) {
     thislabel = appendTopicLabel(thisnode, 0, node_r);
     thislabel.transition(500)
              .attr("opacity", 1);
+    thislabel.transition(500).attr("opacity", 1);
   } else {
     thislabel.transition(500)
              .attr("opacity", 0)
@@ -147,7 +146,6 @@ var drawGraph = function(node, undernode, node_r) {
       .attr("r", node_r)
       .attr("opacity", 0)
       .on("click", circleClick);
-  appendTopicLabel(node, 1, node_r);
 }; 
 
 var setNode = function(vis, graph) { 
