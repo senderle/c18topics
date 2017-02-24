@@ -1,0 +1,24 @@
+{
+  "name": "c18topics",
+  "version": "1.0.0",
+  "description": "A topic model of 18th century texts",
+  "main": "plot.js",
+  "scripts": {
+    "build": "babel src -d lib", 
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maecapozzi/c18topics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maecapozzi/c18topics/issues"
+  },
+  "homepage": "https://github.com/maecapozzi/c18topics#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.1.10"
+  }
+}
