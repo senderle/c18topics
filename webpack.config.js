@@ -11,9 +11,21 @@ module.exports = {
     path: path.resolve('dist'), 
     filename: 'index_bundle.js'
   }, 
-  module: { 
-    loaders: [ 
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
+  module: {
+    rules: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false
+            }
+          },
+        ]
+      },
     ]
   }, 
   plugins: [HtmlWebpackPluginConfig]
